@@ -1,0 +1,22 @@
+[
+	{
+		"tenThuoc":"Imatig",
+		"soDangKy":"VN3-246-19",
+		"phanLoai":"Thuốc bột",
+		"quyCachDongGoi":"Hộp 1 lọ",
+		"maThuoc":"HCI_01",
+		"tieuChuan":"USP39",
+		"donViTinh":"lọ",
+		"gia":100000
+	},
+	{
+		"tenThuoc":"Zydpiron 20",
+		"soDangKy":"VN-22302-19",
+		"phanLoai": "Iron",
+		"quyCachDongGoi":"Hộp 5 lọ 5ml",
+		"maThuoc":"HCI_02",
+		"tieuChuan":"USP38",
+		"donViTinh":"hộp",
+		"gia":200000
+	}
+]
