@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/hieuplasma/InventoryMangerment/static/css/main.42232a5a.chunk.css",
+    "main.js": "/hieuplasma/InventoryMangerment/static/js/main.0b1db437.chunk.js",
+    "main.js.map": "/hieuplasma/InventoryMangerment/static/js/main.0b1db437.chunk.js.map",
+    "runtime-main.js": "/hieuplasma/InventoryMangerment/static/js/runtime-main.42417d68.js",
+    "runtime-main.js.map": "/hieuplasma/InventoryMangerment/static/js/runtime-main.42417d68.js.map",
+    "static/js/2.bee47f9f.chunk.js": "/hieuplasma/InventoryMangerment/static/js/2.bee47f9f.chunk.js",
+    "static/js/2.bee47f9f.chunk.js.map": "/hieuplasma/InventoryMangerment/static/js/2.bee47f9f.chunk.js.map",
+    "index.html": "/hieuplasma/InventoryMangerment/index.html",
+    "precache-manifest.712d450a80116ad68d2a65addcd25562.js": "/hieuplasma/InventoryMangerment/precache-manifest.712d450a80116ad68d2a65addcd25562.js",
+    "service-worker.js": "/hieuplasma/InventoryMangerment/service-worker.js",
+    "static/css/main.42232a5a.chunk.css.map": "/hieuplasma/InventoryMangerment/static/css/main.42232a5a.chunk.css.map",
+    "static/media/jerry.jpg": "/hieuplasma/InventoryMangerment/static/media/jerry.cb43de8c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.42417d68.js",
+    "static/js/2.bee47f9f.chunk.js",
+    "static/css/main.42232a5a.chunk.css",
+    "static/js/main.0b1db437.chunk.js"
+  ]
+}
