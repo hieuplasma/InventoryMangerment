@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Layout, Menu, Icon, Breadcrumb, Row, Col, Input } from 'antd';
+import { Button, Layout, Menu, Icon, Breadcrumb, Row, Col, Input, Table } from 'antd';
 import {
     BrowserRouter,
     Route,
@@ -11,6 +11,7 @@ import {
 
 
 import { Select } from 'antd';
+
 
 const { Option } = Select;
 
@@ -28,11 +29,12 @@ class ReportingScreen extends Component {
 
 
     render() {
+       
 
         return (
 
             <div style={styles.container}>
-                ReportingScreen
+               
             </div>
         )
     }

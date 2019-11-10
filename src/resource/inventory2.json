@@ -1,0 +1,36 @@
+[
+	{
+		"tenThuoc": "Imatig",
+		"maThuoc": "HCI_01",
+		"position": [
+			{
+				"soKho": "1",
+				"phong": "1",
+				"gia": "1",
+				"tang": "1",
+				"soLuong": "1000"
+			},
+			{
+				"soKho": "1",
+				"phong": "1",
+				"gia": "2",
+				"tang": "1",
+				"soLuong": "2000"
+			},
+			{
+				"soKho": "2",
+				"phong": "1",
+				"gia": "3",
+				"tang": "2",
+				"soLuong": "3000"
+			},
+			{
+				"soKho": "2",
+				"phong": "2",
+				"gia": "1",
+				"tang": "1",
+				"soLuong": "1000"
+			}
+		]
+	}
+]

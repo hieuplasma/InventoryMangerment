@@ -22,6 +22,9 @@ import InputScreen from './containers/inventory/InputScreen';
 import OutputScreen from './containers/inventory/OutputScreen';
 import HomeScreen from './containers/HomeScreen';
 import DetailProduct from './containers/product/DetailProduct';
+import WorkerScreen from './containers/work/WorkerScreen';
+import AssignScreen from './containers/work/AssignScreen';
+import FindinInventory from './containers/inventory/FindinInventory';
 
 const { Header, Sider, Content } = Layout;
 const { SubMenu } = Menu;
@@ -58,6 +61,9 @@ class App extends Component {
         break;
       case "22":
         history.push("/out-inventory");
+        break;
+      case "23":
+        history.push("/find-in-inventory");
         break;
       case "3":
         history.push('/report');
@@ -149,6 +155,10 @@ class App extends Component {
               <Icon type="fullscreen" />
               <span>Xuất kho</span>
             </Menu.Item>
+            <Menu.Item key="23">
+              <Icon type="search" />
+              <span>Tìm kiếm sản phẩm</span>
+            </Menu.Item>
           </SubMenu>
           <Menu.Item key="3">
             <Icon type="file-text" />
@@ -235,7 +245,10 @@ class App extends Component {
             <Route path="/editproduct" component={EditPtoductScreen} />
             <Route path="/input-inventory" component={InputScreen} />
             <Route path="/out-inventory" component={OutputScreen} />
+            <Route path="/find-in-inventory" component={FindinInventory} />
             <Route path="/report" component={ReportingScreen} />
+            <Route path="/work/manager/:id" component={WorkerScreen} />
+            <Route path="/work/assign/:id" component={AssignScreen} />
             <Route path="/work" component={WorkingScreen} />
           </Switch>
 

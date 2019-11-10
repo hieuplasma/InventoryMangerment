@@ -32,7 +32,7 @@ class HomeScreen extends Component {
         return (
 
             <div style={styles.container}>
-                HomeScreen
+                
             </div>
         )
     }
@@ -56,5 +56,5 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
         padding: 20
-    }
+    },
 }

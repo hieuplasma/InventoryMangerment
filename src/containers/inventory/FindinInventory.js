@@ -11,13 +11,14 @@ import {
 
 
 import { Select } from 'antd';
-import thuoc from '../../resource/thuoc.json'
+import inventory from '../../resource/inventory.json'
+import inventory2 from '../../resource/inventory2.json'
 const { Option } = Select;
 
 
 
 
-class FindProductScreen extends Component {
+class FindinInventory extends Component {
 
     constructor(props) {
         super(props);
@@ -25,47 +26,46 @@ class FindProductScreen extends Component {
             keyword: '',
             type: 'name',
             count: 2,
-            data: thuoc
+            data: inventory2[0]
         }
     }
 
     render() {
         const columns = [
             {
-                title: <p style={styles.title}>Mã số thuốc</p>,
-                dataIndex: 'maThuoc',
-                key: 'maThuoc',
+                title: <p style={styles.title}>Số kho</p>,
+                dataIndex: 'soKho',
+                key: 'soKho',
             },
             {
-                title: <p style={styles.title}>Tên thuốc</p>,
-                dataIndex: 'tenThuoc',
-                key: 'tenThuoc',
+                title: <p style={styles.title}>Tầng</p>,
+                dataIndex: 'phong',
+                key: 'phong',
             },
             {
-                title: <p style={styles.title}>Loại</p>,
-                dataIndex: 'phanLoai',
-                key: 'phanLoai'
-
+                title: <p style={styles.title}>Giá</p>,
+                dataIndex: 'gia',
+                key: 'gia'
             },
             {
-                title: <p style={styles.title}>Số đăng ký</p>,
-                dataIndex: 'soDangKy',
-                key: 'soDangKy'
+                title: <p style={styles.title}> Phòng</p>,
+                dataIndex: 'tang',
+                key: 'tang'
             },
             {
                 title: <p style={styles.title}>Số lượng</p>,
-                dataIndex: 'gia',
-                key: 'gia'
+                dataIndex: 'soLuong',
+                key: 'soLuong'
             },
         ]
         return (
             <div style={styles.container}>
                 <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', height: 50 }}>
-                    <text style={{ fontSize: 20, fontWeight: 'bold' }}> Tìm kiếm theo : </text>
+                    <text style={{ fontSize: 20, fontWeight: 'bold' }}> Loại sản phẩm tìm kiếm : </text>
                     <Select defaultValue={this.state.type} style={{ width: 150, marginLeft: 20 }} size={'large'} >
-                        <Option value={'name'}>Tên</Option>
-                        <Option value={'id'}>Mã thuốc</Option>
-                        <Option value={'businessiId'}> Số đăng ký</Option>
+                        <Option value={'name'}>Thuốc</Option>
+                        <Option value={'id'}>Nguyên liệu</Option>
+                        <Option value={'businessiId'}> Bao bì</Option>
                     </Select>
                 </div>
                 <div style={{ height: 10, width: '100%' }}></div>
@@ -77,17 +77,17 @@ class FindProductScreen extends Component {
                 <Button type="primary" style={{ height: 50, marginLeft: 20, width: 150 }}>
                     Tìm kiếm
                     </Button>
-                <Button type="primary" style={{ height: 50, marginLeft: 20, width: 200 }}>
+                {/* <Button type="primary" style={{ height: 50, marginLeft: 20, width: 200 }}>
                     Hiển thị tất cả
-                </Button>
-                <p style={{ fontSize: 24, fontWeight: 'bold', marginTop: 30 }}> Đã tìm được {this.state.data.length} sản phẩm  </p>
-                <Table columns={columns} dataSource={this.state.data} />
+                </Button> */}
+                <p style={{ fontSize: 24, fontWeight: 'bold', marginTop: 30 }}>Kết quả tìm kiếm của thuốc {this.state.data.tenThuoc} (Mã thuốc: {this.state.data.maThuoc} ) </p>
+                <Table columns={columns} dataSource={this.state.data.position} />
             </div>
         )
     }
 }
 
-export default withRouter(FindProductScreen);
+export default withRouter(FindinInventory);
 
 const styles = {
     container: {

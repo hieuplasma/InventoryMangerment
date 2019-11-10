@@ -1,0 +1,51 @@
+[
+	{
+		"maThuoc":"TH0001",
+		"tenThuoc":"Hỗ trợ tiêu hóa",
+		"loai":"Trẻ em",
+		"soDangKy":"SDK000001",
+		"soLuong":"1000"
+	},
+	{
+		"maThuoc":"TH0002",
+		"tenThuoc":"Giảm mỡ máu",
+		"loai":"Người già",
+		"soDangKy":"SDK000002",
+		"soLuong":"400"
+	},
+	{
+		"maThuoc":"TH0003",
+		"tenThuoc":"Cân bằng huyết áp",
+		"loai":"Người cao tuổi",
+		"soDangKy":"SDK000003",
+		"soLuong":"1000"
+	},
+	{
+		"maThuoc":"TH0004",
+		"tenThuoc":"Hỗ trợ miễn dịch",
+		"loai":"Trẻ em",
+		"soDangKy":"SDK000004",
+		"soLuong":"2000"
+	},
+	{
+		"maThuoc":"TH0005",
+		"tenThuoc":"Thuốc giảm cân",
+		"loai":"Người lớn",
+		"soDangKy":"SDK000005",
+		"soLuong":"3000"
+	},
+	{
+		"maThuoc":"TH0006",
+		"tenThuoc":"Giảm đau tiền đình",
+		"loai":"Người già",
+		"soDangKy":"SDK000006",
+		"soLuong":"4000"
+	},
+	{
+		"maThuoc":"TH0007",
+		"tenThuoc":"Thuốc trợ tim",
+		"loai":"Người già",
+		"soDangKy":"SDK000007",
+		"soLuong":"5000"
+	}
+]

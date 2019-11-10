@@ -11,73 +11,51 @@ import {
 
 
 import { Select } from 'antd';
+import TextArea from 'antd/lib/input/TextArea';
 
 const { Option } = Select;
 
 
 
 
-class AddProductScreen extends Component {
+class AssignScreen extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            type : 'Thuốc'
+            data: this.props.location.state.record
         }
     }
 
-    render() {
 
+
+    render() {
         return (
 
             <div style={styles.container}>
-                <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', height: 50 }}>
-                    <text style={{ fontSize: 20, fontWeight: 'bold' }}> Loại sản phẩm thêm : </text>
-                    <Select defaultValue={this.state.type} style={{ width: 150, marginLeft: 20 }} size={'large'} >
-                        <Option value={'medicine'}>Thuốc</Option>
-                        <Option value={'material'}>Nguyên liệu</Option>
-                        <Option value={'Packaging'}>Bao bì</Option>
-                    </Select>
-                </div>
-
+                <p style={styles.name}>Giao việc cho: &nbsp;{this.state.data.name}</p>
                 <div style={styles.box}>
-                    <p style={styles.name}>Nhập thông tin thuốc</p>
-
                     <div style={styles.item1}>
-                        <p style={styles.feild}>Tên thuốc</p>
+                        <p style={styles.feild}>Tên công việc </p>
+                        <Input style={{ marginLeft: 5 }} size="large" />
+                    </div>
+                    <div style={styles.item1}>
+                        <p style={styles.feild}>Thời hạn</p>
+                        <Input style={{ marginLeft: 5 }} size="large" />
+                    </div>
+                    <div style={styles.item1}>
+                        <p style={styles.feild}>Người giao</p>
+                        <Input style={{ marginLeft: 5 }} size="large" />
+                    </div>
+                    <div style={styles.item1}>
+                        <p style={styles.feild}>Đồng đội</p>
                         <Input style={{ marginLeft: 5 }} size="large" />
                     </div>
                     <div style={styles.item2}>
-                        <p style={styles.feild}> Mã thuốc</p>
-                        <Input style={{ marginLeft: 5 }} size="large" />
+                        <p style={styles.feild}>Mô tả</p>
+                        <TextArea size="large" multiple={true} style={{ height: 270, marginLeft: -5 }} />
                     </div>
 
-                    <div style={styles.item1}>
-                        <p style={styles.feild}>  Số đăng ký</p>
-                        <Input style={{ marginLeft: 5 }} size="large" />
-                    </div>
-                    <div style={styles.item2}>
-                        <p style={styles.feild}> Tiêu chuẩn </p>
-                        <Input style={{ marginLeft: 5 }} size="large" />
-                    </div>
-
-                    <div style={styles.item1}>
-                        <p style={styles.feild}>  Phân loại </p>
-                        <Input style={{ marginLeft: 5 }} size="large" />
-                    </div>
-                    <div style={styles.item2}>
-                        <p style={styles.feild}> Đơn vị tính</p>
-                        <Input style={{ marginLeft: 5 }} size="large" />
-                    </div>
-
-                    <div style={styles.item1}>
-                        <p style={styles.feild}> Đóng gói</p>
-                        <Input style={{ marginLeft: 5 }} size="large" />
-                    </div>
-                    <div style={styles.item2}>
-                        <p style={styles.feild}>Giá</p>
-                        <Input style={{ marginLeft: 5 }} size="large" />
-                    </div>
                 </div>
 
                 <div style={{ width: '100%', height: 50, display: 'flex', flexDirection: 'row-reverse', marginTop: 30 }}>
@@ -88,12 +66,11 @@ class AddProductScreen extends Component {
                     </Button>
                 </div>
             </div>
-            // </RemoveScroll>  
         )
     }
 }
 
-export default withRouter(AddProductScreen);
+export default withRouter(AssignScreen);
 
 const styles = {
     container: {
@@ -112,6 +89,12 @@ const styles = {
         alignItems: 'center',
         padding: 20
     },
+    name: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        color: 'black',
+        width: '100%'
+    },
     box: {
         borderWidth: 1,
         borderColor: '#cccccc',
@@ -122,13 +105,7 @@ const styles = {
         flexWrap: 'wrap',
         display: 'flex',
         flexDirection: 'row',
-        marginTop:20
-    },
-    name: {
-        fontSize: 24,
-        fontWeight: 'bold',
-        color: 'black',
-        width: '100%'
+        marginTop: 20
     },
     item1: {
         width: '50%',
@@ -140,20 +117,20 @@ const styles = {
         paddingRight: 20
     },
     item2: {
-        width: '50%',
+        width: '100%',
         //   backgroundColor :'blue',
-        height: 70,
+        height: 270,
         display: 'flex',
         flexDirection: 'row',
-        alignItems: 'center',
-        paddingLeft: 20
+        // alignItems: 'center',
+        paddingRight: 20,
+        marginTop: 20
     },
     feild: {
-        width: 120,
+        width: 140,
         fontSize: 16,
         color: 'black',
         fontWeight: 'bold',
         marginTop: 16,
     },
-
 }
