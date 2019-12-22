@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Layout, Menu, Icon, Breadcrumb, Row, Col, Input } from 'antd';
+import { Button, Layout, Menu, Icon, Breadcrumb, Row, Col, Input, message } from 'antd';
 import {
     BrowserRouter,
     Route,
@@ -12,6 +12,10 @@ import {
 
 import { Select } from 'antd';
 import TextArea from 'antd/lib/input/TextArea';
+
+
+import { confirmAlert } from 'react-confirm-alert'; // Import
+import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
 
 const { Option } = Select;
 
@@ -27,7 +31,22 @@ class AssignScreen extends Component {
         }
     }
 
-
+    _submitForm = () => {
+        confirmAlert({
+            title:`Giao việc cho ${this.state.data.name}`,
+            message: 'Bạn có chắc chắn không?',
+            buttons: [
+                {
+                    label: 'Yes',
+                    onClick: () => message.success("Đã thêm thành công")
+                },
+                {
+                    label: 'No',
+                    // onClick: () => alert('Click No')
+                }
+            ]
+        });
+    };
 
     render() {
         return (
@@ -59,13 +78,13 @@ class AssignScreen extends Component {
                 </div>
 
                 <div style={{ width: '100%', height: 50, display: 'flex', flexDirection: 'row-reverse', marginTop: 30 }}>
-                    <Button type="primary" style={{ height: 50, width: 120 }}>
+                    <Button type="primary" style={{ height: 50, width: 120 }} onClick={() => this._submitForm()}>
                         <span style={{ fontSize: 18 }}>
                             Thêm
                         </span>
                     </Button>
                 </div>
-            </div>
+            </div >
         )
     }
 }
@@ -79,7 +98,7 @@ const styles = {
         // display: 'flex',
         // justifyContent: 'center',
         // alignItems: 'center',
-        overflow: 'auto'
+        //overflow: 'auto'
     },
     container2: {
         height: '100%',

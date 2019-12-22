@@ -4,7 +4,8 @@
         "state": 1,
         "working": [
             {
-                "work": "Công việc 1",
+                "work": "Nhập kho ",
+                "id": 1,
                 "detail": "",
                 " evaluate": ""
             }
@@ -15,22 +16,26 @@
         "state": 2,
         "working": [
             {
-                "work": "Công việc 1",
+                "work": "Nhập kho ",
+                "id": 1,
                 "detail": "",
                 " evaluate": ""
             },
             {
-                "work": "Công việc 2",
+                "work": "Xuất kho",
+                "id": 2,
                 "detail": "",
                 " evaluate": ""
             },
             {
-                "work": "Công việc 3",
+                "work": "Kiểm kê kho",
+                "id": 3,
                 "detail": "",
                 " evaluate": ""
             },
             {
-                "work": "Công việc 4",
+                "work": "Lập báo cáo",
+                "id": 4,
                 "detail": "",
                 " evaluate": ""
             }
@@ -41,7 +46,8 @@
         "state": 2,
         "working": [
             {
-                "work": "Công việc 1",
+                "work": "Nhập kho ",
+                "id": 1,
                 "detail": "",
                 " evaluate": ""
             }
@@ -52,7 +58,8 @@
         "state": 1,
         "working": [
             {
-                "work": "Công việc 1",
+                "work": "Nhập kho ",
+                "id": 1,
                 "detail": "",
                 " evaluate": ""
             }
@@ -63,7 +70,8 @@
         "state": 1,
         "working": [
             {
-                "work": "Công việc 1",
+                "work": "Nhập kho ",
+                "id": 1,
                 "detail": "",
                 " evaluate": ""
             }

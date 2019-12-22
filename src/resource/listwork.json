@@ -1,0 +1,94 @@
+[
+    {
+        "id": 1,
+        "work": "Nhập kho",
+        "timeinit": "12/12/2019",
+        "timeexp": "14/12/2019",
+        "nguoiGiao": "Tran Minh Hieu",
+        "nhanVien": [
+            {
+                "name": "Le Minh nguyen"
+            },
+            {
+                "name": "Nguyen Quang Thanh"
+            },
+            {
+                "name": "Cao Van Duy"
+            },
+            {
+                "name": "Hong Sok Heang"
+            }
+        ],
+        "progress": 50,
+        "totalkpi": 120
+    },
+    {
+        "id": 2,
+        "work": "Xuất kho",
+        "timeinit": "12/12/2019",
+        "timeexp": "14/12/2019",
+        "nguoiGiao": "Tran Minh Hieu",
+        "nhanVien": [
+            {
+                "name": "Le Minh nguyen"
+            },
+            {
+                "name": "Nguyen Quang Thanh"
+            },
+            {
+                "name": "Cao Van Duy"
+            },
+            {
+                "name": "Hong Sok Heang"
+            }
+        ],
+        "progress": 60,
+        "totalkpi": 140
+    },
+    {
+        "id": 3,
+        "work": "Kiểm kê kho",
+        "timeinit": "12/12/2019",
+        "timeexp": "14/12/2019",
+        "nguoiGiao": "Tran Minh Hieu",
+        "nhanVien": [
+            {
+                "name": "Le Minh nguyen"
+            },
+            {
+                "name": "Nguyen Quang Thanh"
+            },
+            {
+                "name": "Cao Van Duy"
+            },
+            {
+                "name": "Hong Sok Heang"
+            }
+        ],
+        "progress": 70,
+        "totalkpi": 160
+    },
+    {
+        "id": 4,
+        "work": "Lập báo cáo",
+        "timeinit": "12/12/2019",
+        "timeexp": "21/12/2019",
+        "nguoiGiao": "Tran Minh Hieu",
+        "nhanVien": [
+            {
+                "name": "Le Minh nguyen"
+            },
+            {
+                "name": "Nguyen Quang Thanh"
+            },
+            {
+                "name": "Cao Van Duy"
+            },
+            {
+                "name": "Hong Sok Heang"
+            }
+        ],
+        "progress": 58,
+        "totalkpi": 180
+    }
+]

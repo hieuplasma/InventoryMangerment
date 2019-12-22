@@ -12,7 +12,7 @@ class BreadcrumbCustom extends React.Component {
             <Breadcrumb>
                 <Breadcrumb.Item>
                     <a style={{ fontSize: 24, color: 'black', fontWeight: 'bold' }}>
-                        Trang quản lý kho
+                    Nhóm 13 - Trang quản lý kho
                         </a>
                 </Breadcrumb.Item>
             </Breadcrumb>

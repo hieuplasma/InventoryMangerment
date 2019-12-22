@@ -1,19 +1,26 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "homepage": "",
   "private": true,
   "dependencies": {
     "antd": "^3.24.2",
+    "gh-pages": "^2.1.1",
     "react": "^16.10.2",
+    "react-confirm-alert": "^2.4.1",
     "react-dom": "^16.10.2",
+    "react-notification-badge": "^1.5.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "recharts": "^1.8.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

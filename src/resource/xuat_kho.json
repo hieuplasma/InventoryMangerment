@@ -1,0 +1,32 @@
+[
+    {
+        "product": "HCI0001",
+        "count": "100",
+        "person": "Le Minh Nguyen",
+        "time": "14:00:00 12-24-2019"
+    },
+    {
+        "product": "HCI0002",
+        "count": "200",
+        "person": "Cao Van Duy",
+        "time": "14:00:00 12-24-2019"
+    },
+    {
+        "product": "HCI0003",
+        "count": "300",
+        "person": "Nguyen Quang Thanh",
+        "time": "20:30:00 12-25-2019"
+    },
+    {
+        "product": "HCI0004",
+        "count": "400",
+        "person": "Tran Minh Hieu",
+        "time": "18:10:00 12-09-2019"
+    },
+    {
+        "product": "HCI0005",
+        "count": "500",
+        "person": "HongSok Heang",
+        "time": "13:30:15 12-09-2019"
+    } 
+]

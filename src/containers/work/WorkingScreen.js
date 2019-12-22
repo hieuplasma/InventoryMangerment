@@ -65,12 +65,12 @@ class ReportingScreen extends Component {
                 render: (text, record) => {
                     return (
                         <span style={{ display: 'flex', flexDirection: 'row' }}>
-                            <Button style={styles.button}
+                            {/* <Button style={styles.button}
                                 onClick={() => this.props.history.push(`/work/assign/${record.name}`, { record: record })}>
                                 Giao việc
                                  </Button>
-                            <Button style={styles.button}>Đánh giá</Button>
-                            <Button style={styles.button}
+                            <Button style={styles.button}>Đánh giá</Button> */}
+                            <Button style={styles.button} type="primary"
                                 onClick={() => this.props.history.push(`/work/manager/${record.name}`, { record: record })}>
                                 Theo dõi
                                 </Button>
@@ -98,7 +98,7 @@ const styles = {
         // display: 'flex',
         // justifyContent: 'center',
         // alignItems: 'center',
-        overflow: 'auto'
+        //overflow: 'auto'
     },
     container2: {
         height: '100%',

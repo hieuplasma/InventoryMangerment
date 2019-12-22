@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Layout, Menu, Icon, Breadcrumb, Row, Col, Input } from 'antd';
+import { Button, Layout, Menu, Icon, Breadcrumb, Row, Col, Input, message } from 'antd';
 import {
     BrowserRouter,
     Route,
@@ -12,6 +12,9 @@ import {
 
 import { Select } from 'antd';
 
+import { confirmAlert } from 'react-confirm-alert'; // Import
+import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
+
 const { Option } = Select;
 
 
@@ -22,9 +25,27 @@ class EditPtoductScreen extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            type : 'Thuốc'
+            type: 'Thuốc'
         }
     }
+
+    _submitForm = () => {
+        confirmAlert({
+            title: 'Sửa thông tin sản phẩm',
+            message: 'Bạn có chắc chắn không?',
+            buttons: [
+                {
+                    label: 'Yes',
+                    onClick: () => message.success("Đã sửa thành công")
+                },
+                {
+                    label: 'No',
+                    // onClick: () => alert('Click No')
+                }
+            ]
+        });
+    };
+
 
     render() {
 
@@ -32,7 +53,7 @@ class EditPtoductScreen extends Component {
 
             <div style={styles.container}>
                 <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', height: 50 }}>
-                    <text style={{ fontSize: 20, fontWeight: 'bold' }}> Loại sản phẩm thêm : </text>
+                    <text style={{ fontSize: 20, fontWeight: 'bold' }}> Loại sản phẩm sửa  : </text>
                     <Select defaultValue={this.state.type} style={{ width: 150, marginLeft: 20 }} size={'large'} >
                         <Option value={'medicine'}>Thuốc</Option>
                         <Option value={'material'}>Nguyên liệu</Option>
@@ -81,9 +102,11 @@ class EditPtoductScreen extends Component {
                 </div>
 
                 <div style={{ width: '100%', height: 50, display: 'flex', flexDirection: 'row-reverse', marginTop: 30 }}>
-                    <Button type="primary" style={{ height: 50, width: 120 }}>
+                    <Button type="primary" style={{ height: 50, width: 120 }} onClick={() => {
+                        this._submitForm()
+                    }}>
                         <span style={{ fontSize: 18 }}>
-                        Áp dụng
+                            Áp dụng
                         </span>
                     </Button>
                 </div>
@@ -102,7 +125,7 @@ const styles = {
         // display: 'flex',
         // justifyContent: 'center',
         // alignItems: 'center',
-        overflow: 'auto'
+        //overflow: 'auto'
     },
     container2: {
         height: '100%',
@@ -122,7 +145,7 @@ const styles = {
         flexWrap: 'wrap',
         display: 'flex',
         flexDirection: 'row',
-        marginTop:20
+        marginTop: 20
     },
     name: {
         fontSize: 24,

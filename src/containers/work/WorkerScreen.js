@@ -40,7 +40,8 @@ class WorkerScreen extends Component {
                 key: 'detail',
                 render: (text, record) => {
                     return (
-                        <Button style={styles.button} type="primary">Chi tiết</Button>
+                        <Button style={styles.button} type="primary"
+                        onClick= {()=> this.props.history.push(`/listwork/${record.work}`, {id: record.id})}>Chi tiết</Button>
                     )
                 }
             },
@@ -80,7 +81,7 @@ const styles = {
         // display: 'flex',
         // justifyContent: 'center',
         // alignItems: 'center',
-        overflow: 'auto'
+        //overflow: 'auto'
     },
     container2: {
         height: '100%',

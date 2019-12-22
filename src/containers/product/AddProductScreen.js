@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Layout, Menu, Icon, Breadcrumb, Row, Col, Input } from 'antd';
+import { Button, Layout, Menu, Icon, Breadcrumb, Row, Col, Input, message } from 'antd';
 import {
     BrowserRouter,
     Route,
@@ -12,6 +12,9 @@ import {
 
 import { Select } from 'antd';
 
+import { confirmAlert } from 'react-confirm-alert'; // Import
+import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
+
 const { Option } = Select;
 
 
@@ -22,9 +25,26 @@ class AddProductScreen extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            type : 'Thuốc'
+            type: 'Thuốc'
         }
     }
+
+    _submitForm = () => {
+        confirmAlert({
+            title: 'Thêm vào danh sách sản phẩm',
+            message: 'Bạn có chắc chắn không?',
+            buttons: [
+                {
+                    label: 'Yes',
+                    onClick: () => message.success("Đã thêm thành công")
+                },
+                {
+                    label: 'No',
+                    // onClick: () => alert('Click No')
+                }
+            ]
+        });
+    };
 
     render() {
 
@@ -81,7 +101,7 @@ class AddProductScreen extends Component {
                 </div>
 
                 <div style={{ width: '100%', height: 50, display: 'flex', flexDirection: 'row-reverse', marginTop: 30 }}>
-                    <Button type="primary" style={{ height: 50, width: 120 }}>
+                    <Button type="primary" style={{ height: 50, width: 120 }} onClick={() => this._submitForm()}>
                         <span style={{ fontSize: 18 }}>
                             Thêm
                         </span>
@@ -102,7 +122,7 @@ const styles = {
         // display: 'flex',
         // justifyContent: 'center',
         // alignItems: 'center',
-        overflow: 'auto'
+        //overflow: 'auto'
     },
     container2: {
         height: '100%',
@@ -122,7 +142,7 @@ const styles = {
         flexWrap: 'wrap',
         display: 'flex',
         flexDirection: 'row',
-        marginTop:20
+        marginTop: 20
     },
     name: {
         fontSize: 24,

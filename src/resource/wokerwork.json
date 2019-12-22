@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Nhập kho",
+        "content": {
+            "maSP": "VN-22302-1",
+            "soluong": 243,
+            "soLuongLam": 0,
+            "member": "Le Minh Nguyen"
+        },
+        "kpi": 12,
+        "from":"Nguyen Duc Trung",
+        "isComplete": false
+    },
+    {
+        "name": "Nhập kho",
+        "content": {
+            "maSP": "VN-22302-2",
+            "soluong": 222,
+            "soLuongLam": 120,
+            "member": "Cao Van Duy"
+        },
+        "kpi": 13,
+        "from":"Nguyen Duc Trung",
+        "isComplete": false
+    },
+    {
+        "name": "Nhập kho",
+        "content": {
+            "maSP": "VN-22302-3",
+            "soluong": 865,
+            "soLuongLam": 865,
+            "member": "Nguyen Quang Thanh"
+        },
+        "kpi": 3,
+        "from":"Nguyen Duc Trung",
+        "isComplete": true
+    },
+    {
+        "name": "Xuất kho",
+        "content": {
+            "maSP": "VN-22302-4",
+            "soluong": 564,
+            "soLuongLam": 564,
+            "member": "Tran Minh Hieu"
+        },
+        "kpi": 13,
+        "from":"Nguyen Duc Trung",
+        "isComplete": true
+    },
+    {
+        "name": "Xuất kho",
+        "content": {
+            "maSP": "VN-22302-5",
+            "soluong": 123,
+            "soLuongLam": 8,
+            "member": "Pham Long Nhat"
+        },
+        "kpi": 20,
+        "from":"Nguyen Duc Trung",
+        "isComplete": false
+    },
+    {
+        "name": "Xuất kho",
+        "content": {
+            "maSP": "VN-22302-6",
+            "soluong": 114,
+            "soLuongLam": 114,
+            "member": "Nguyen Van Thanh"
+        },
+        "kpi": 18,
+        "from":"Nguyen Duc Trung",
+        "isComplete": true
+    },
+    {
+        "name": "Kiểm kê kho",
+        "content": {
+            "maSP": "VN-22302-7",
+            "soluong": 111,
+            "soLuongLam": 100,
+            "member": "Tran Thi Ly"
+        },
+        "kpi": 22,
+        "from":"Nguyen Duc Trung",
+        "isComplete": false
+    },
+    {
+        "name": "Kiểm kê kho",
+        "content": {
+            "maSP": "VN-22302-8",
+            "soluong": 60,
+            "soLuongLam": 60,
+            "member": "Tran Ngoc Mai"
+        },
+        "kpi": 10,
+        "from":"Nguyen Duc Trung",
+        "isComplete": true
+    },
+    {
+        "name": "Kiểm kê kho",
+        "content": {
+            "maSP": "VN-22302-9",
+            "soluong": 543,
+            "soLuongLam": 543,
+            "member": "Pham Duc Cuong"
+        },
+        "kpi": 7,
+        "from":"Nguyen Duc Trung",
+        "isComplete": true
+    },
+    {
+        "name": "Kiểm kê kho",
+        "content": {
+            "maSP": "VN-22302-10",
+            "soluong": 120,
+            "soLuongLam": 100,
+            "member": "Nguyen Tung Lam"
+        },
+        "kpi": 8,
+        "from":"Nguyen Duc Trung",
+        "isComplete": false
+    }
+]

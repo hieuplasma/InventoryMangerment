@@ -77,9 +77,9 @@ class FindProductScreen extends Component {
                 <Button type="primary" style={{ height: 50, marginLeft: 20, width: 150 }}>
                     Tìm kiếm
                     </Button>
-                <Button type="primary" style={{ height: 50, marginLeft: 20, width: 200 }}>
+                {/* <Button type="primary" style={{ height: 50, marginLeft: 20, width: 200 }}>
                     Hiển thị tất cả
-                </Button>
+                </Button> */}
                 <p style={{ fontSize: 24, fontWeight: 'bold', marginTop: 30 }}> Đã tìm được {this.state.data.length} sản phẩm  </p>
                 <Table columns={columns} dataSource={this.state.data} />
             </div>
@@ -96,7 +96,7 @@ const styles = {
         // display: 'flex',
         // justifyContent: 'center',
         // alignItems: 'center',
-        overflow: 'auto'
+        //overflow: 'auto'
     },
     container2: {
         height: '100%',

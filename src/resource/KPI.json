@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Nhập kho",
+        "state": "Đang làm",
+        "kpiguest": "10",
+        "kpireal": "8"
+    },
+    {
+        "id": 2,
+        "name": "Xuất kho",
+        "state": "Hoàn thành",
+        "kpiguest": "15",
+        "kpireal": "15"
+    },
+    {
+        "id": 3,
+        "name": "Kiểm kê kho",
+        "state": "Đang làm",
+        "kpiguest": "14",
+        "kpireal": "6"
+    },
+    {
+        "id": 4,
+        "name": "Lập báo cáo",
+        "state": "Đang làm",
+        "kpiguest": "10",
+        "kpireal": "7"
+    }
+]

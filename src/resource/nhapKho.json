@@ -1,0 +1,54 @@
+[
+	{
+		"maThuoc": "HCI_001",
+		"tenThuoc": "Amoxicilin",
+		"loai": "Bột",
+		"thoiGian": "1/11/2019",
+		"soLuong": "12",
+		"soKho": "1",
+		"phong": "1",
+		"gia": "1",
+		"tang": "1",
+		"soLo": "15",
+		"hsd":"2/3/2019"
+	},
+	{
+		"maThuoc": "HCI_002",
+		"tenThuoc": "ChLoramphenicol",
+		"loai": "Viên",
+		"thoiGian": "2/3/2019",
+		"soLuong": "6",
+		"soKho": "1",
+		"phong": "1",
+		"gia": "1",
+		"tang": "1",
+		"soLo": "15",
+		"hsd":"2/3/2019"
+	},
+	{
+		"maThuoc": "HCI_003",
+		"tenThuoc": "Clofazimine",
+		"loai": "Nước",
+		"thoiGian": "3/2/2019",
+		"soLuong": "23",
+		"soKho": "1",
+		"phong": "1",
+		"gia": "1",
+		"tang": "1",
+		"soLo": "15",
+		"hsd":"2/3/2019"
+	},
+	{
+		"maThuoc": "HCI_004",
+		"tenThuoc": "Acetylcyteice",
+		"loai": "Viên",
+		"thoiGian": "8/10/2019",
+		"soLuong": "7",
+		"soKho": "1",
+		"phong": "1",
+		"gia": "1",
+		"tang": "1",
+		"soLo": "15",
+		"hsd":"2/3/2019"
+	}
+]
